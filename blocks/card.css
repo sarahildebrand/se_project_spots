@@ -43,5 +43,7 @@
 
   .card__title {
     max-width: 245px;
+    font-size: 16px;
+    line-height: 1;
   }
 }

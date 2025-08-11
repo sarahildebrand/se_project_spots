@@ -41,6 +41,8 @@
 }
 
 .profile__edit-btn {
+  display: flex;
+  gap: 8px;
   margin-top: auto;
   background-color: #fcf5e5;
   opacity: 70%;
@@ -111,5 +113,9 @@
     margin: 0;
     max-width: 288px;
     width: 100%;
+  }
+
+  .profile__edit-btn {
+    margin: auto;
   }
 }
