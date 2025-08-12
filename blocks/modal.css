@@ -44,12 +44,13 @@
 
 .modal__close-btn:hover {
   cursor: pointer;
-  color: #212121;
+  opacity: 1;
 }
 
 .modal__title {
   margin: 0 0 32px;
   font-size: 32px;
+  font-weight: 500;
 }
 
 .modal__form {
@@ -73,6 +74,7 @@
   border-radius: 8px;
   border-color: #2121214d;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 .modal__input:hover {
@@ -87,12 +89,14 @@
   max-width: 156px;
   width: 100%;
   border-radius: 8px;
-  background-color: #fff;
+  color: #fff;
+  background-color: #212121;
   border: none;
+  padding: 18px 32px;
 }
 
 .modal__submit-btn:hover {
-  color: #2121218d;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -111,5 +115,11 @@
 
   .modal__submit-btn {
     width: 100%;
+  }
+
+  .modal__close-btn {
+    padding: 0;
+    top: 8px;
+    right: 8px;
   }
 }
