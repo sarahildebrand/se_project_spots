@@ -88,10 +88,6 @@ function getCardElement(data) {
     previewCaptionEl.textContent = data.name;
 
     openModal(previewModal);
-
-    previewModalCloseBtn.addEventListener("click", function () {
-      closeModal(previewModal);
-    });
   });
 
   return cardElement;
@@ -123,6 +119,10 @@ newPostCloseBtn.addEventListener("click", function () {
   closeModal(newPostModal);
 });
 
+previewModalCloseBtn.addEventListener("click", function () {
+  closeModal(previewModal);
+});
+
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
@@ -144,6 +144,7 @@ function handleNewPostSubmit(evt) {
   cardsList.prepend(cardElement);
 
   closeModal(newPostModal);
+  newPostForm.reset(newPostModal);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);

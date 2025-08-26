@@ -143,7 +143,7 @@
   height: auto;
 }
 
-@media screen and (max-width: 480x) {
+@media screen and (max-width: 480px) {
   .modal__container {
     padding: 22px 12px 12px;
   }
