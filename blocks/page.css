@@ -10,5 +10,7 @@
 }
 
 @media screen and (max-width: 320px) {
-  width: 100%;
+  .page__section {
+    width: 320px;
+  }
 }

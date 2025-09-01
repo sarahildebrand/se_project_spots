@@ -143,9 +143,13 @@
 }
 
 @media screen and (max-width: 320px) {
+  .modal {
+    width: 320px;
+    padding: 0;
+  }
+
   .modal__container {
-    max-width: 300px;
-    margin: 0;
+    max-width: 280px;
   }
 
   .modal__title {
@@ -157,7 +161,7 @@
   }
 
   .modal__submit-btn {
-    width: 300px;
+    width: 280px;
   }
 
   .modal__close-btn {
